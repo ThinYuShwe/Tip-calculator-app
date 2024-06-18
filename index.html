@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        spli<br />
+        tter
+      </h1>
+      <section>
+        <div class="main-container">
+          <div class="bill-form">
+            <label for="bill">Bill</label>
+            <input type="text" id="bill" class="dollar-icon" name="bill" />
+          </div>
+
+          <div class="select-tips">
+            <label for="tips">Select tips %</label>
+            <div id="tips">
+              <button class="tip-button1" data-value="5">5%</button>
+              <button class="tip-button2" data-value="10">10%</button>
+              <button class="tip-button3" data-value="15">15%</button>
+              <button class="tip-button4" data-value="25">25%</button>
+              <button class="tip-button5" data-value="50">50%</button>
+              <input
+                type="text"
+                class="tip-button6"
+                placeholder="Custom"
+                name="Custom"
+              />
+            </div>
+          </div>
+          <div class="noOfPeople-form">
+            <label for="noOfPeople">Number of People</label>
+            <input
+              type="text"
+              id="noOfPeople"
+              class="profile-icon"
+              name="noOfPeople"
+            />
+          </div>
+        </div>
+        <div class="calculated-tips">
+          <div class="one">
+            <div>
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="tip-amount">$0.00</p>
+          </div>
+          <div class="two">
+            <div>
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="total">$0.00</p>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script src="JavaScript2.js"></script>
+  </body>
+</html>
